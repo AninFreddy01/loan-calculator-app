@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="./img/logo.JPG" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan calculator</title>
+
+    <!--custom css-->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="title">
+            <h1 class="text-title">loan calculator</h1>
+        </div>
+
+        <form action="" class="form-items">
+          <div class="first-item">
+              <label for="">loan amount</label>
+              <input type="number" id="loan_amount">
+          </div>  
+          <div class="second-item">
+              <label for="">interest percent (%)</label>
+              <input type="number" id="interest_percent">
+          </div>
+          <div class="third-item">
+              <label for="">no. months to pay</label>
+              <input type="number" id="months_to_pay">
+          </div>
+
+        </form>
+        <div class="button-group">
+            <button class="btn" id="calculate">calculate</button>
+            <button class="clear" id="clear">clear</button>
+        </div>
+
+        <div class="interest-rate">
+            <h3 class="interest-amount">interest amount</h3>
+            <p class="interest-rate" id="interest_rate"></p>
+        </div>
+
+        <div class="loan-total">
+            <h3 class="loan-total">total loan amount</h3>
+            <p class="loan-total" id="total_loan_amount"></p>
+        </div>
+
+        <div class="amt-per-month">
+            <h3 class="amt-per-month">amount to pay per month</h3>
+            <p class="amt-per-month" id="amount_per_month"></p>
+        </div>
+        
+    </div>
+
+
+    <!--custom js-->
+    <script src="./script.js"></script>
+
+</body>
+</html>
